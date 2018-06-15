@@ -1,0 +1,68 @@
+.right-feed{
+    width: 308px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    top: 43px;
+    margin-top: 12px;
+}
+
+.stories-sec{
+    display: flex;
+    width: 284px;
+    height: 92px;
+    padding: 12px;
+    border: $border-feed-cont;
+    border-radius: 3px;
+    background-color: $feed-back-color;
+    margin-bottom: 12px;
+    flex-direction: column;
+}
+
+.sto-sec-title{
+    display: flex;
+    width: 284px;
+    height: 16px;
+    padding-bottom: 12px;
+    color: $r-feed-grey-txt;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+    font-family: $main-font;
+}
+
+.sto-sec-add{
+    display: flex;
+    width: 284px;
+    height: 56px;
+    padding-bottom: 8px;
+}
+
+.sto-sec-icn{
+    width: 51px;
+    height: 51px;
+    display: flex;
+}
+
+.sto-sec-desc{
+    display: flex;
+    height: 55px;
+    width: 220px;
+    padding-left: 7px;
+}
+
+.sto-sec-desc1{
+    text-decoration: none;
+    color: $feed-blue-txt;
+    font-weight: 600;
+    font-family: $main-font;
+    font-size: 14px;
+}
+
+.sto-sec-desc2{
+    color: $r-feed-grey-txt;
+    font-weight: normal;
+    margin-top: 3px;
+    font-family: $main-font;
+    font-size: 13px;
+}

@@ -1,0 +1,138 @@
+.header{
+    display: flex;
+    position: fixed;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:#4267b2;
+    align-items: center;
+    max-width: 100%;
+    border-bottom: 1px solid #29487d;
+    color: white;
+    z-index: 100;
+}
+
+    .nav-container{
+        display: flex;
+        margin-left: 77px;
+    }
+
+    .main-search-box{
+        display: flex;
+        padding-left: 126px;
+    }
+    
+    .fb-search-box{
+        display: flex;
+        width: 440px;
+        height: 23px;
+        border: 1px solid #3b5998;
+        left: 10px;
+        border-radius: 3px;
+        margin-right: 100px;
+     }
+
+    .vl-header{
+        border-left: 1px solid rgb(59, 92, 160);
+        height: 18px;   
+    } 
+
+    .fb-search{
+        display: inline-flex;
+        width: 393px;
+        position: relative;
+        height: 23px;
+        padding: 0px;
+        font-family: Helvetica, Arial, sans-serif;
+        border: 0px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    .fb-logo{
+        display: flex;
+        color: white;
+        font-size: 26px;
+        font-family: Helvetica, Arial, sans-serif;
+        padding-right: 5px;   
+    }
+
+    .fas fa-search{
+        display: inline-flex;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        color: gray;    
+    }
+
+    .fb-search-btn{
+        display: inline-flex;
+        position: relative;
+        width: 14;
+        height: 24;
+        padding-left: 16px;
+        padding-right: 16px;
+        left: px;
+        border: 0px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: #e9ebee;
+        color: #90959e;      
+    } 
+
+    .nav-icons{
+        display: flex;
+        text-decoration: none;
+        justify-content: space-around;
+        width: 240px;
+        right: 15px;
+        align-items: center;
+    
+
+        > a{
+            display: inline-flex;
+            color: white;
+            justify-content: space-between;
+            font-family: Helvetica, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 10px;
+            padding-right: 5pxz
+        }    
+    }
+      
+    .avatar-pic{
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    .avatar-name{
+        display: inline-flex;
+        padding-left: 10px;
+        align-items: center;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    .right-icons{
+        display: flex;
+        text-decoration: none;
+        width: 120px;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 5px; 
+    
+        > i{
+            display: inline-flex;
+            font-size: 20px;
+            padding: 7px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+
+

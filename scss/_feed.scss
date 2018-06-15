@@ -1,0 +1,362 @@
+.feed-container {
+    display: flex;
+    height: 3000px;
+    width: 832px;
+    margin-top: 43px; 
+}
+
+.feed{
+    display: flex;
+    width: 500px;
+    height: 100%;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+    flex-direction: column;
+}
+
+.create-feed-post{
+    width: 500px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $feed-back-color;
+    border: $border-feed-cont;
+    border-radius: 3px;
+    flex-direction: column;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}    
+
+.cfp-header{
+    display: flex;
+    width: 476px;
+    height: 16px;
+    padding: 8px 24px 8px 0px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f6f7f9;
+    border-bottom: $border-feed-cont;
+}    
+        
+.link-icon{
+    width: 16px;
+    height: 16px;
+    padding-right: 6px;
+} 
+
+.link-text{
+    text-decoration: none;
+    display: flex;
+    padding: 4px 10px 4px 8px;
+    color: $feed-blue-txt;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.vl{
+    display: flex;
+    border-right: 1px solid #dfe0e3;
+    height: 15px;
+}
+
+.cfp-comment{
+    display: flex;
+    width: 500px;
+    height: 75px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.avtr-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avtr-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 12px 0 0 12px;
+}
+
+.txt-comment{
+    width: 388px;
+    height: 35px;
+    padding: 23px 48px 13px 12px;
+}
+
+input{
+    border: none;
+    font-family: $main-font;
+    font-size: 13px;
+    width: 200px;
+}
+
+.cfp-footer{
+    display: flex;
+    width: 476px;
+    height: 32px;
+    border-top: $border-feed-line;
+    padding: 8px 0px 8px 0px;
+    margin: 0px 12px 0px 12px;
+    justify-content: flex-start;
+    align-items: flex-start;   
+}
+
+.cfp-footer-ico{
+    width: 20px;
+    height: 20px;
+}
+
+.cfp-button{
+    display: inline-flex;
+    background-color: #f6f7f9;
+    height: 32px;
+    width: 120;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 15px; 
+}
+
+.cfp-button-text{
+    color: #4b4f56;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 2px 0 0 8px;
+    font-family: $main-font;
+}
+
+.feed-post{
+    display: flex;
+    width: 476px;
+    max-height: 688px;
+    padding: 12px 12px 12px 12px;
+    background-color: $feed-back-color;
+    border: $border-feed-cont;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.fp-header{
+    display: flex;
+    width: 450px;
+    height: 46px;  
+}      
+ 
+.fp-header-avtr{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e7e7e7;
+}
+
+.fp-header-profile{
+    display: inline-flex;
+    width: 402px;
+    height: 38px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    margin-top: 2px;
+    padding-bottom: 5px;
+}
+
+.fp-hp{
+    display: inline-flex;
+    margin: 0;
+    margin-right: 85px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+.fp-hp-2{
+    text-decoration: none;
+    font-family: $main-font;
+    color: $feed-grey-txt;
+    font-weight: 100;
+    font-size: 14px;    
+
+    >a{
+       text-decoration: none;
+       font-family: $main-font;
+       color: $feed-blue-txt;
+    }
+}
+
+.fp-hp-3{
+
+    >a{
+       text-decoration: none;
+       font-family: $main-font;
+       color: $feed-blue-txt;
+       font-weight: 600;
+       font-size: 14px;
+    }
+}
+
+.fp-hp-time{
+    display: inline-flex;
+    margin: none;
+    font-family: $main-font;
+    font-size: 13px;
+    color: $feed-grey-txt;   
+}
+ 
+.fp-header-post > p{
+    display: flex;
+    position: relative;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.38;
+    width: 476px;
+    height: 150px;
+    margin-top: 6px;   
+}
+
+.fp-cont{
+    display: flex;
+    height: 282px;
+    width: 500px;
+    z-index: 10;
+    position: relative;
+    right: 12px;
+}
+   
+.fp-footer{
+    display: flex;
+    width: 420px;
+    height: 120px;
+}    
+
+.fp-foo-views{
+   display: inline-flex;
+   text-decoration: none;
+   font-family: $main-font;
+   color: $feed-grey-txt;
+   font-size: 12px;
+   width: 150px;    
+}
+
+.fp-vl{
+    
+    height: 55px;
+    border-left: 2px solid #cdcdcd;
+    margin-top: 26px;
+
+}
+
+.fp-foo-descr{
+   display: inline-flex;
+   width: 464px;
+   height: 77px;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-left: 8px;
+   margin-top: 2px;
+   padding-bottom: 5px;
+} 
+   
+.fp-fd{
+    display: inline-flex;
+    margin: 0;
+    margin-right: 85px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+.fp-fd-2{
+    text-decoration: none;
+    font-family: $main-font;
+    color: $feed-grey-txt;
+    font-weight: 100;
+    font-size: 14px;
+
+    > a{
+        text-decoration: none;
+        font-family: $main-font;
+        color: $feed-blue-txt;
+        font-size: 11px;
+    }   
+}
+
+.fp-fd-3 > a{
+       text-decoration: none;
+       font-family: $main-font;
+       color: $feed-blue-txt;
+       font-weight: 600;
+       font-size: 12px;
+}
+
+.fp-fd-time{
+    display: inline-flex;
+    margin: none;
+    font-family: $main-font;
+    font-size: 12px;
+    color: $feed-grey-txt;   
+}
+
+.fp-footer-btn{
+    display: flex;
+    width: 474px;
+    height: 42px;
+    justify-content: space-around;
+    align-items: center; 
+    border-top: $border-feed-line;
+    border-bottom: $border-feed-line;
+    margin-top: 12px;
+}  
+
+.fp-footer-ico{
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px
+}
+
+.fp-footer-like, .fp-footer-com, .fp-footer-sha{
+    display: inline-flex;
+    text-decoration: none;
+    height: 40px;
+    width: 160px;
+    border: none;
+    text-align: center;
+    border: none;
+    background-color: $feed-back-color;
+    justify-content: center;
+    align-items: center; 
+      
+}
+
+.fp-button-text{
+    display: inline-flex;
+    color: $feed-grey-txt;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: $main-font;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
