@@ -17,7 +17,7 @@
 /* line 16, C:/Code/netcraft/27.05 FB/scss/_header.scss */
 .nav-container {
   display: flex;
-  margin-left: 77px;
+  margin-left: 35px;
 }
 
 /* line 21, C:/Code/netcraft/27.05 FB/scss/_header.scss */
@@ -95,7 +95,7 @@
   display: flex;
   text-decoration: none;
   justify-content: space-around;
-  width: 240px;
+  width: 245px;
   right: 15px;
   align-items: center;
 }
@@ -133,19 +133,91 @@
 .right-icons {
   display: flex;
   text-decoration: none;
-  width: 120px;
+  width: 165px;
   justify-content: space-around;
   align-items: center;
   padding-left: 5px;
 }
 
 /* line 128, C:/Code/netcraft/27.05 FB/scss/_header.scss */
-.right-icons > i {
+.right-icons > .user-friend {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+  background-repeat: no-repeat;
+  background-size: 29px 1411px;
+  background-position: 0 -467px;
+  opacity: .6;
   display: inline-flex;
-  font-size: 20px;
-  padding: 7px;
-  text-decoration: none;
-  color: black;
+  height: 27px;
+  width: 27px;
+}
+
+/* line 138, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-friend:hover {
+  opacity: 0.8;
+}
+
+/* line 143, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-msg {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+  background-repeat: no-repeat;
+  background-size: 29px 1411px;
+  background-position: 0 -717px;
+  opacity: .6;
+  display: inline-flex;
+  height: 27px;
+  width: 27px;
+}
+
+/* line 153, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-msg:hover {
+  opacity: 0.8;
+}
+
+/* line 158, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-notif {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+  background-repeat: no-repeat;
+  background-size: 29px 1411px;
+  background-position: 0 -617px;
+  opacity: .6;
+  display: inline-flex;
+  height: 27px;
+  width: 27px;
+}
+
+/* line 168, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-notif:hover {
+  opacity: 0.8;
+}
+
+/* line 173, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-help {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+  background-repeat: no-repeat;
+  background-size: 29px 1411px;
+  background-position: 0 -1203px;
+  opacity: .6;
+  display: inline-flex;
+  height: 20px;
+  width: 27px;
+}
+
+/* line 183, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-help:hover {
+  opacity: 0.8;
+}
+
+/* line 188, C:/Code/netcraft/27.05 FB/scss/_header.scss */
+.right-icons > .user-set {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+  background-repeat: no-repeat;
+  background-size: 29px 1411px;
+  background-position: 0 -1313px;
+  opacity: .6;
+  display: inline-flex;
+  height: 20px;
+  width: 27px;
+  margin-bottom: 2px;
 }
 
 /* line 1, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
@@ -198,6 +270,13 @@
 }
 
 /* line 43, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
+.nav-list .sidenav-item.active, .nav-list .sidenav-item:hover {
+  background-color: #f6f7f9;
+  border-radius: 1px;
+  border: 1px solid #dddfe2;
+}
+
+/* line 49, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
 .nav-list .sidenav-item > a {
   display: flex;
   width: 128px;
@@ -206,13 +285,7 @@
   white-space: nowrap;
 }
 
-/* line 51, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
-.nav-list .sidenav-item:hover {
-  background-color: #f6f7f9;
-  border-radius: 3px;
-}
-
-/* line 58, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
+/* line 63, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
 .pic-nav {
   display: inline-flex;
   width: 20px;
@@ -221,7 +294,7 @@
   margin-top: 4px;
 }
 
-/* line 66, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
+/* line 71, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
 .nav-text {
   display: inline-flex;
   color: black;
@@ -233,7 +306,7 @@
   text-align: start;
 }
 
-/* line 77, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
+/* line 82, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
 .side-nav-short {
   display: flex;
   height: 120px;
@@ -243,7 +316,7 @@
   flex-direction: column;
 }
 
-/* line 86, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
+/* line 91, C:/Code/netcraft/27.05 FB/scss/_sidebar.scss */
 h4 {
   display: flex;
   margin: 0px;
@@ -257,12 +330,13 @@ h4 {
 /* line 1, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .feed-container {
   display: flex;
+  flex-direction: row;
   height: 3000px;
   width: 832px;
   margin-top: 43px;
 }
 
-/* line 8, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 9, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .feed {
   display: flex;
   width: 500px;
@@ -273,142 +347,18 @@ h4 {
   flex-direction: column;
 }
 
-/* line 18, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.create-feed-post {
-  width: 500px;
-  height: 160px;
+/* line 19, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.posts-area {
   display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  border: 1px solid #dddfe2;
-  border-radius: 3px;
-  flex-direction: column;
-  margin-bottom: 12px;
-  margin-right: 12px;
+  height: 3000;
 }
 
-/* line 31, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-header {
-  display: flex;
-  width: 476px;
-  height: 16px;
-  padding: 8px 24px 8px 0px;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #f6f7f9;
-  border-bottom: 1px solid #dddfe2;
-}
-
-/* line 42, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.link-icon {
-  width: 16px;
-  height: 16px;
-  padding-right: 6px;
-}
-
-/* line 48, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.link-text {
-  text-decoration: none;
-  display: flex;
-  padding: 4px 10px 4px 8px;
-  color: #385899;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 14px;
-}
-
-/* line 59, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.vl {
-  display: flex;
-  border-right: 1px solid #dfe0e3;
-  height: 15px;
-}
-
-/* line 65, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-comment {
-  display: flex;
-  width: 500px;
-  height: 75px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-/* line 73, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.avtr-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 79, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.avtr-img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  margin: 12px 0 0 12px;
-}
-
-/* line 86, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.txt-comment {
-  width: 388px;
-  height: 35px;
-  padding: 23px 48px 13px 12px;
-}
-
-/* line 92, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-input {
-  border: none;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  width: 200px;
-}
-
-/* line 99, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-footer {
-  display: flex;
-  width: 476px;
-  height: 32px;
-  border-top: 1px solid #eaecee;
-  padding: 8px 0px 8px 0px;
-  margin: 0px 12px 0px 12px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-/* line 110, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-footer-ico {
-  width: 20px;
-  height: 20px;
-}
-
-/* line 115, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-button {
-  display: inline-flex;
-  background-color: #f6f7f9;
-  height: 32px;
-  width: 120;
-  border: none;
-  border-radius: 15px;
-  text-align: center;
-  margin-right: 15px;
-}
-
-/* line 126, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
-.cfp-button-text {
-  color: #4b4f56;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 2px 0 0 8px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* line 134, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 24, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .feed-post {
   display: flex;
   width: 476px;
-  max-height: 688px;
-  padding: 12px 12px 12px 12px;
+  max-height: 800px;
+  padding: 12px 12px 0px 12px;
   background-color: white;
   border: 1px solid #dddfe2;
   border-radius: 3px;
@@ -418,14 +368,14 @@ input {
   margin-bottom: 12px;
 }
 
-/* line 148, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 38, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-header {
   display: flex;
-  width: 450px;
+  width: 475px;
   height: 46px;
 }
 
-/* line 154, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 44, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-header-avtr {
   display: inline-flex;
   width: 40px;
@@ -434,7 +384,7 @@ input {
   border: 1px solid #e7e7e7;
 }
 
-/* line 162, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 52, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-header-profile {
   display: inline-flex;
   width: 402px;
@@ -447,7 +397,7 @@ input {
   padding-bottom: 5px;
 }
 
-/* line 174, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 64, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-hp {
   display: inline-flex;
   margin: 0;
@@ -456,7 +406,7 @@ input {
   text-decoration: none;
 }
 
-/* line 182, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 72, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-hp-2 {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -465,14 +415,14 @@ input {
   font-size: 14px;
 }
 
-/* line 189, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 79, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-hp-2 > a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
   color: #385899;
 }
 
-/* line 198, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 88, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-hp-3 > a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -481,7 +431,7 @@ input {
   font-size: 14px;
 }
 
-/* line 207, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 97, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-hp-time {
   display: inline-flex;
   margin: none;
@@ -490,7 +440,52 @@ input {
   color: #616770;
 }
 
-/* line 215, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 105, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-header-menu {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/ZhIo2fY_tL3.png");
+  background-repeat: no-repeat;
+  background-size: 64px 355px;
+  background-position: -21px -168px;
+  height: 20px;
+  width: 20px;
+}
+
+/* line 113, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-header-menu .fp-post-menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 95px;
+  height: 67px;
+  background-color: white;
+  border: 1px solid #dddfe2;
+  top: 260px;
+  right: 460px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px #90949c;
+}
+
+/* line 127, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-header-menu:hover .fp-post-menu {
+  display: flex;
+}
+
+/* line 132, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-post-items {
+  padding: 10px;
+  margin: 0px;
+}
+
+/* line 137, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-edit, .fp-del {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* line 145, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-header-post > p {
   display: flex;
   position: relative;
@@ -503,7 +498,7 @@ input {
   margin-top: 6px;
 }
 
-/* line 227, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 157, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-cont {
   display: flex;
   height: 282px;
@@ -513,14 +508,14 @@ input {
   right: 12px;
 }
 
-/* line 236, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 166, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-footer {
   display: flex;
   width: 420px;
   height: 120px;
 }
 
-/* line 242, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 172, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-foo-views {
   display: inline-flex;
   text-decoration: none;
@@ -530,14 +525,14 @@ input {
   width: 150px;
 }
 
-/* line 251, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 181, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-vl {
   height: 55px;
   border-left: 2px solid #cdcdcd;
   margin-top: 26px;
 }
 
-/* line 259, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 189, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-foo-descr {
   display: inline-flex;
   width: 464px;
@@ -550,7 +545,7 @@ input {
   padding-bottom: 5px;
 }
 
-/* line 271, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 201, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-fd {
   display: inline-flex;
   margin: 0;
@@ -559,7 +554,7 @@ input {
   text-decoration: none;
 }
 
-/* line 279, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 209, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-fd-2 {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -568,7 +563,7 @@ input {
   font-size: 14px;
 }
 
-/* line 286, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 216, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-fd-2 > a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -576,7 +571,7 @@ input {
   font-size: 11px;
 }
 
-/* line 294, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 224, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-fd-3 > a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -585,7 +580,7 @@ input {
   font-size: 12px;
 }
 
-/* line 302, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 232, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-fd-time {
   display: inline-flex;
   margin: none;
@@ -594,7 +589,7 @@ input {
   color: #616770;
 }
 
-/* line 310, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 240, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-footer-btn {
   display: flex;
   width: 474px;
@@ -606,7 +601,7 @@ input {
   margin-top: 12px;
 }
 
-/* line 321, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 251, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-footer-ico {
   display: inline-flex;
   width: 22px;
@@ -614,7 +609,7 @@ input {
   margin-right: 5px;
 }
 
-/* line 328, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 258, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-footer-like, .fp-footer-com, .fp-footer-sha {
   display: inline-flex;
   text-decoration: none;
@@ -628,12 +623,49 @@ input {
   align-items: center;
 }
 
-/* line 342, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 272, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-button-text {
   display: inline-flex;
   color: #616770;
   font-weight: 600;
   font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 280, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-comments {
+  display: flex;
+  width: 475px;
+  height: 34px;
+  padding: 8px 0px 8px 0px;
+}
+
+/* line 286, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-comments .fp-avtr-com .fp-com-pic {
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+/* line 293, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-comments .fp-post-com {
+  height: 32px;
+  width: 416px;
+  border-radius: 18px;
+  border: 1px solid #dddfe2;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+
+/* line 304, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+.fp-comments .fp-com-txt {
+  border: none;
+  text-align: left;
+  font-size: 13px;
+  line-height: 16px;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -733,6 +765,145 @@ body {
 span, a, ul, li, div {
   text-decoration: none;
   list-style-type: none;
+}
+
+/* line 19, C:/Code/netcraft/27.05 FB/scss/_main.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* line 2, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.create-feed-post {
+  width: 500px;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  flex-direction: column;
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+
+/* line 15, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-header {
+  display: flex;
+  width: 476px;
+  height: 16px;
+  padding: 8px 24px 8px 0px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f6f7f9;
+  border-bottom: 1px solid #dddfe2;
+}
+
+/* line 26, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.link-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 6px;
+}
+
+/* line 32, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.link-text {
+  text-decoration: none;
+  display: flex;
+  padding: 4px 10px 4px 8px;
+  color: #385899;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+/* line 43, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.vl {
+  display: flex;
+  border-right: 1px solid #dfe0e3;
+  height: 15px;
+}
+
+/* line 49, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-comment {
+  display: flex;
+  width: 500px;
+  height: 75px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 57, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.avtr-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 63, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.avtr-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 12px 0 0 12px;
+}
+
+/* line 70, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.txt-comment {
+  width: 388px;
+  height: 35px;
+  padding: 13px 48px 13px 12px;
+}
+
+/* line 76, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+textarea {
+  border: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  width: 400px;
+}
+
+/* line 83, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-footer {
+  display: flex;
+  width: 476px;
+  height: 32px;
+  border-top: 1px solid #eaecee;
+  padding: 8px 0px 8px 0px;
+  margin: 0px 12px 0px 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 94, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-footer-ico {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 99, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-button, .cfp-button-post {
+  display: inline-flex;
+  background-color: #f6f7f9;
+  height: 32px;
+  width: 147px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 15px;
+  justify-content: center;
+}
+
+/* line 111, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+.cfp-button-txt {
+  color: #4b4f56;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 2px 0 0 8px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /*# sourceMappingURL=../css/styles.map */

@@ -15,7 +15,7 @@
 
     .nav-container{
         display: flex;
-        margin-left: 77px;
+        margin-left: 35px;
     }
 
     .main-search-box{
@@ -85,7 +85,7 @@
         display: flex;
         text-decoration: none;
         justify-content: space-around;
-        width: 240px;
+        width: 245px;
         right: 15px;
         align-items: center;
     
@@ -120,19 +120,85 @@
     .right-icons{
         display: flex;
         text-decoration: none;
-        width: 120px;
+        width: 165px;
         justify-content: space-around;
         align-items: center;
         padding-left: 5px; 
     
-        > i{
+        > .user-friend{
+            background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+            background-repeat: no-repeat;
+            background-size: 29px 1411px;
+            background-position: 0 -467px;
+            opacity: .6;
             display: inline-flex;
-            font-size: 20px;
-            padding: 7px;
-            text-decoration: none;
-            color: black;
+            height: 27px;
+            width:27px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        > .user-msg{
+            background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+            background-repeat: no-repeat;
+            background-size: 29px 1411px;
+            background-position: 0 -717px;
+            opacity: .6;
+            display: inline-flex;
+            height: 27px;
+            width:27px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        > .user-notif{
+            background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+            background-repeat: no-repeat;
+            background-size: 29px 1411px;
+            background-position: 0 -617px;
+            opacity: .6;
+            display: inline-flex;
+            height: 27px;
+            width:27px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        > .user-help{
+            background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+            background-repeat: no-repeat;
+            background-size: 29px 1411px;
+            background-position: 0 -1203px;
+            opacity: .6;
+            display: inline-flex;
+            height: 20px;
+            width:27px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        > .user-set{
+            background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/okPiIOm2bIs.png");
+            background-repeat: no-repeat;
+            background-size: 29px 1411px;
+            background-position: 0 -1313px;
+            opacity: .6;
+            display: inline-flex;
+            height: 20px;
+            width:27px;
+            margin-bottom: 2px;  
         }
     }
+        
+    
 
 
 

@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facebook</title>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href="css/normalize.css">
+    <link rel = "stylesheet" href="css/styles.css">
+    <link rel = "stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header">
+    <div class = "header">
         <div class="main-search-box">
             <a class="fb-logo" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
             <div class="fb-search-box">
@@ -24,7 +25,7 @@
                 <a href="https://www.facebook.com/serjbekker">
                     <span class="avatar">
                         <img class="avatar-pic" 
-                        src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.0-1/p74x74/14192717_10209346304067113_149743019733493537_n.jpg?_nc_cat=0&amp;oh=a5051b44f1eb5765548d19200584793f&amp;oe=5B7B64AA" alt="">
+                        src="images/avatar.jpg" alt="">
                     </span> 
                     <span class="avatar-name">Sergey</span>
                 </a>
@@ -35,20 +36,21 @@
                 <div class="vl-header"></div>
         </div>
         <div class="right-icons"> 
-                <i class="fas fa-user-friends"></i>
-                <i class="fab fa-facebook-messenger"></i>
-                <i class="fas fa-globe"></i>
+                <a href = "" class = "user-friend"></a>
+                <a href = "" class = "user-msg"></a>
+                <a href = "" class = "user-notif"></a>
                 <div class="vl-header"></div>
-                <i class="far fa-question-circle"></i>
+                <a href = "" class = "user-help"></a>
+                <a href = "" class = "user-set"></a>
         </div>
         </div>
     </div>
-    <div class="side-bar">
+    <div class = "side-bar">
             <div class = "side-nav">
                 <ul class="nav-list">
                     <li class="sidenav-item">
                     <a href="https://www.facebook.com/serjbekker">
-                     <img class="pic-nav" src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.0-1/p74x74/14192717_10209346304067113_149743019733493537_n.jpg?_nc_cat=0&amp;oh=a5051b44f1eb5765548d19200584793f&amp;oe=5B7B64AA" alt=""> 
+                     <img class="pic-nav" src="images/avatar.jpg" alt=""> 
                      <div class="nav-text">Sergey Bekker</div>
                     </a>
                     </li>
@@ -56,7 +58,7 @@
             </div>
             <div class = "side-nav-feed">
                     <ul class="nav-list">
-                        <li class="sidenav-item"><!--can't apply properties only for this element-->
+                        <li class="sidenav-item active"><!--can't apply properties only for this element-->
                           <a href="https://www.facebook.com/?sk=nf">
                           <img class="pic-nav" src="https://png.icons8.com/office/80/000000/activity-feed.png" alt=""> 
                           <div class="nav-text">News Feed</div>
@@ -100,9 +102,9 @@
                 </ul>
             </div>       
     </div>
-    <div class="feed-container">
-        <div class="feed">
-            <div class="create-feed-post">
+    <div class = "feed-container">
+        <div class = "feed">
+            <div class = "create-feed-post">
                 <div class="cfp-header">
                         <a class = "cfp-header-link" href="#">
                             <span class="link-text">
@@ -122,25 +124,200 @@
                 <div class="cfp-comment">
                     <div class="avtr">
                         <a class="avtr-link" href="https://www.facebook.com/serjbekker">
-                            <img class = "avtr-img" src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.0-1/p74x74/14192717_10209346304067113_149743019733493537_n.jpg?_nc_cat=0&oh=a5051b44f1eb5765548d19200584793f&oe=5B7B64AA">
+                            <img class = "avtr-img" src="images/avatar.jpg">
                         </a>
                     </div>
                     <div class="txt-comment">
-                            <input type="text" placeholder="Whats on your mind, Sergey?">     
+                        <textarea type="text" class = "txt-post" placeholder = "Whats on your mind, Sergey?"></textarea>     
                     </div>
                 </div>
                 <div class="cfp-footer">
                     <button type="button" class = "cfp-button">
                             <img class = "cfp-footer-ico" src="https://png.icons8.com/dusk/64/666666/picture.png"> 
-                            <div class = "cfp-button-text">Photo/Video</div>
+                            <div class = "cfp-button-txt">Photo/Video</div>
                     </button>
                     <button type="button" class = "cfp-button">
                              <img class = "cfp-footer-ico" src="https://png.icons8.com/office/40/666666/lol.png"> 
-                             <div class="cfp-button-text">Feeling activity</div>       
+                             <div class="cfp-button-txt">Feeling activity</div>       
+                    </button>
+                    <button  class = "cfp-button-post"> 
+                        <div class="cfp-button-txt">Post</div>       
                     </button>
                 </div> 
-            </div> 
-            <div class="feed-post">  
+            </div>
+            <div class = "posts-area">
+                <div class = "feed-post">  
+                    <div class = "fp-header">
+                        <a class = "fp-header-link" href="#">
+                            <img class="fp-header-avtr" src="https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-1/p160x160/19990343_1382987295125463_2614242156320044896_n.jpg?_nc_cat=0&oh=27bb0f076fb484be04e5ce32b7e87f01&oe=5B770690">   
+                        </a> 
+                        <div class="fp-header-profile">
+                            <h5 class="fp-hp">
+                            <span class="fp-hp-1">
+                                <span class="fp-hp-2">
+                                    <span class="fp-hp-3">    
+                                    <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
+                                    Bluedot Festival</a>
+                                    </span>
+                                     shared a 
+                                    <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">video</a>
+                                    .
+                                </span>    
+                            </span>              
+                            </h5>
+                            <span class="fp-hp-time">Yesterday at 11:43am</span>
+                        </div>
+                        <div class = "fp-header-menu">
+                            <div class = "fp-post-menu">
+                                <ul class = "fp-post-items">
+                                    <li class = "fp-post-del">
+                                        <a href = "">
+                                            <span class = "fp-del">Save post</span>
+                                        </a>
+                                    </li>
+                                    <li class = "fp-post-edit">
+                                        <a href = "">
+                                            <span class = "fp-edit">Edit post</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class = "fp-header-post">  
+                        <p>Today we celebrate #WorldOceansDay and with the
+                            growing issue of plastic in our oceans, It's more
+                            poignant today than ever that we make the efforts to
+                            protect our pale blue dot. We celebrate at #BD18
+                            inviting The Blue Planet in Concert with The Hallé for
+                            a once in a lifetime show combining live music against
+                            a backdrop of remarkable footage from The Blue Planet
+                            2001.<br><br> Limited Thursday add-on, stand-alone and VIP
+                            tickets left, book now > bit.ly/BDTheBluePlanet</p>  
+                    </div>    
+                    <div class = "fp-cont">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbbcearth%2Fvideos%2F1589316244435259%2F&width=500&show_text=false&height=280&appId" 
+                            width="500" height="280" style="border:none;overflow:hidden" 
+                            scrolling="no" frameborder="0" allowTransparency="true" 
+                            allow="encrypted-media" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class = "fp-footer">
+                        <div class="fp-vl"></div>
+                        <div class = "fp-foo-descr">
+                                <span class="fp-foo-views">1,288,962 Views</span>
+                                        <h5 class="fp-fd">
+                                        <span class="fp-fd-1">
+                                            <span class="fp-fd-2">
+                                                <span class="fp-fd-3">    
+                                                <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
+                                                BBC Earth</a>
+                                                </span>
+                                                 is with 
+                                                <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">
+                                                Global Goals for Sustainable Development</a>
+                                                .
+                                            </span>    
+                                        </span>              
+                                        </h5>
+                                        <span class="fp-fd-time">Yesterday at 11:43am</span>
+                        </div>
+                    </div>
+                    <div class = "fp-footer-btn">
+                        <button type = "button" class = "fp-footer-like">
+                                <img class = "fp-footer-ico" src="https://png.icons8.com/windows/96/666666/facebook-like.png"> 
+                                <div class = "fp-button-text">Like</div>
+                        </button>
+                        <button type = "button" class = "fp-footer-com">
+                                 <img class = "fp-footer-ico" src="https://png.icons8.com/small/32/666666/speech-bubble.png"> 
+                                 <div class = "fp-button-text">Comment</div>       
+                        </button>
+                        <button type = "button" class = "fp-footer-sha">
+                                <img class = "fp-footer-ico" src="https://png.icons8.com/android/32/666666/right2.png"> 
+                                <div class = "fp-button-text">Share</div>       
+                        </button>
+                    </div> 
+                    <div class = "fp-comments">
+                        <div class="fp-avtr-com">
+                            <img class = "fp-com-pic" src="images/avatar.jpg" alt = "">
+                        </div>
+                        <div class="fp-post-com">
+                            <input type = "text" class="fp-com-txt" placeholder="Write a comment...">
+                        </div>
+                    </div>   
+                </div>
+                <!--<div class = "feed-post">  
+                <div class = "fp-header">
+                    <a class = "fp-header-link" href="#">
+                        <img class="fp-header-avtr" src="https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-1/p160x160/19990343_1382987295125463_2614242156320044896_n.jpg?_nc_cat=0&oh=27bb0f076fb484be04e5ce32b7e87f01&oe=5B770690">   
+                    </a> 
+                    <div class="fp-header-profile">
+                        <h5 class="fp-hp">
+                        <span class="fp-hp-1">
+                            <span class="fp-hp-2">
+                                <span class="fp-hp-3">    
+                                <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
+                                Bluedot Festival</a>
+                                </span>
+                                 shared a 
+                                <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">video</a>
+                                .
+                            </span>    
+                        </span>              
+                        </h5>
+                        <span class="fp-hp-time">Yesterday at 11:43am</span>
+                    </div>
+                </div> 
+                <div class = "fp-header-post">  
+                    <p>Today we celebrate #WorldOceansDay and with the
+                        growing issue of plastic in our oceans, It's more
+                        poignant today than ever that we make the efforts to
+                        protect our pale blue dot. We celebrate at #BD18
+                        inviting The Blue Planet in Concert with The Hallé for
+                        a once in a lifetime show combining live music against
+                        a backdrop of remarkable footage from The Blue Planet
+                        2001.<br><br> Limited Thursday add-on, stand-alone and VIP
+                        tickets left, book now > bit.ly/BDTheBluePlanet</p>  
+                </div>    
+                <div class = "fp-cont">
+                   <img width= "500px" src="https://external.ftlv2-1.fna.fbcdn.net/safe_image.php?d=AQC63UJBzV9SE0aW&w=540&h=282&url=https%3A%2F%2Fbirdinflight.imgix.net%2Fwp-content%2Fuploads%2F2015%2F02%2F1505393449945_img.png&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&sx=0&sy=1&sw=1200&sh=627&_nc_hash=AQCvw09AoLVhwWgY">
+                </div>
+                <div class = "fp-footer">
+                    <div class="fp-vl"></div>
+                    <div class = "fp-foo-descr">
+                            <span class="fp-foo-views">1,288,962 Views</span>
+                                    <h5 class="fp-fd">
+                                    <span class="fp-fd-1">
+                                        <span class="fp-fd-2">
+                                            <span class="fp-fd-3">    
+                                            <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
+                                            BBC Earth</a>
+                                            </span>
+                                             is with 
+                                            <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">
+                                            Global Goals for Sustainable Development</a>
+                                            .
+                                        </span>    
+                                    </span>              
+                                    </h5>
+                                    <span class="fp-fd-time">Yesterday at 11:43am</span>
+                    </div>
+                </div>
+                <div class = "fp-footer-btn">
+                        <button type = "button" class = "fp-footer-like">
+                                <img class = "fp-footer-ico" src="https://png.icons8.com/windows/96/666666/facebook-like.png"> 
+                                <div class = "fp-button-text">Like</div>
+                        </button>
+                        <button type = "button" class = "fp-footer-com">
+                                 <img class = "fp-footer-ico" src="https://png.icons8.com/small/32/666666/speech-bubble.png"> 
+                                 <div class = "fp-button-text">Comment</div>       
+                        </button>
+                        <button type = "button" class = "fp-footer-sha">
+                                <img class = "fp-footer-ico" src="https://png.icons8.com/android/32/666666/right2.png"> 
+                                <div class = "fp-button-text">Share</div>       
+                       </button>
+                </div>
+                </div>
+                <div class="feed-post">  
                 <div class="fp-header">
                     <a class = "fp-header-link" href="#">
                         <img class="fp-header-avtr" src="https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-1/p160x160/19990343_1382987295125463_2614242156320044896_n.jpg?_nc_cat=0&oh=27bb0f076fb484be04e5ce32b7e87f01&oe=5B770690">   
@@ -215,155 +392,10 @@
                        </button>
                 </div>
             </div>
-            <div class="feed-post">  
-                <div class = "fp-header">
-                    <a class = "fp-header-link" href="#">
-                        <img class="fp-header-avtr" src="https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-1/p160x160/19990343_1382987295125463_2614242156320044896_n.jpg?_nc_cat=0&oh=27bb0f076fb484be04e5ce32b7e87f01&oe=5B770690">   
-                    </a> 
-                    <div class="fp-header-profile">
-                        <h5 class="fp-hp">
-                        <span class="fp-hp-1">
-                            <span class="fp-hp-2">
-                                <span class="fp-hp-3">    
-                                <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
-                                Bluedot Festival</a>
-                                </span>
-                                 shared a 
-                                <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">video</a>
-                                .
-                            </span>    
-                        </span>              
-                        </h5>
-                        <span class="fp-hp-time">Yesterday at 11:43am</span>
-                    </div>
-                </div> 
-                <div class = "fp-header-post">  
-                    <p>Today we celebrate #WorldOceansDay and with the
-                        growing issue of plastic in our oceans, It's more
-                        poignant today than ever that we make the efforts to
-                        protect our pale blue dot. We celebrate at #BD18
-                        inviting The Blue Planet in Concert with The Hallé for
-                        a once in a lifetime show combining live music against
-                        a backdrop of remarkable footage from The Blue Planet
-                        2001.<br><br> Limited Thursday add-on, stand-alone and VIP
-                        tickets left, book now > bit.ly/BDTheBluePlanet</p>  
-                </div>    
-                <div class = "fp-cont">
-                   <img width= "500px" src="https://external.ftlv2-1.fna.fbcdn.net/safe_image.php?d=AQC63UJBzV9SE0aW&w=540&h=282&url=https%3A%2F%2Fbirdinflight.imgix.net%2Fwp-content%2Fuploads%2F2015%2F02%2F1505393449945_img.png&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&sx=0&sy=1&sw=1200&sh=627&_nc_hash=AQCvw09AoLVhwWgY">
-                </div>
-                <div class = "fp-footer">
-                    <div class="fp-vl"></div>
-                    <div class = "fp-foo-descr">
-                            <span class="fp-foo-views">1,288,962 Views</span>
-                                    <h5 class="fp-fd">
-                                    <span class="fp-fd-1">
-                                        <span class="fp-fd-2">
-                                            <span class="fp-fd-3">    
-                                            <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
-                                            BBC Earth</a>
-                                            </span>
-                                             is with 
-                                            <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">
-                                            Global Goals for Sustainable Development</a>
-                                            .
-                                        </span>    
-                                    </span>              
-                                    </h5>
-                                    <span class="fp-fd-time">Yesterday at 11:43am</span>
-                    </div>
-                </div>
-                <div class = "fp-footer-btn">
-                        <button type = "button" class = "fp-footer-like">
-                                <img class = "fp-footer-ico" src="https://png.icons8.com/windows/96/666666/facebook-like.png"> 
-                                <div class = "fp-button-text">Like</div>
-                        </button>
-                        <button type = "button" class = "fp-footer-com">
-                                 <img class = "fp-footer-ico" src="https://png.icons8.com/small/32/666666/speech-bubble.png"> 
-                                 <div class = "fp-button-text">Comment</div>       
-                        </button>
-                        <button type = "button" class = "fp-footer-sha">
-                                <img class = "fp-footer-ico" src="https://png.icons8.com/android/32/666666/right2.png"> 
-                                <div class = "fp-button-text">Share</div>       
-                       </button>
-                </div>
-            </div>
-            <div class="feed-post">  
-                <div class="fp-header">
-                    <a class = "fp-header-link" href="#">
-                        <img class="fp-header-avtr" src="https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-1/p160x160/19990343_1382987295125463_2614242156320044896_n.jpg?_nc_cat=0&oh=27bb0f076fb484be04e5ce32b7e87f01&oe=5B770690">   
-                    </a> 
-                    <div class="fp-header-profile">
-                        <h5 class="fp-hp">
-                        <span class="fp-hp-1">
-                            <span class="fp-hp-2">
-                                <span class="fp-hp-3">    
-                                <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
-                                Bluedot Festival</a>
-                                </span>
-                                 shared a 
-                                <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">video</a>
-                                .
-                            </span>    
-                        </span>              
-                        </h5>
-                        <span class="fp-hp-time">Yesterday at 11:43am</span>
-                    </div>
-                </div> 
-                <div class = "fp-header-post">  
-                    <p>Today we celebrate #WorldOceansDay and with the
-                        growing issue of plastic in our oceans, It's more
-                        poignant today than ever that we make the efforts to
-                        protect our pale blue dot. We celebrate at #BD18
-                        inviting The Blue Planet in Concert with The Hallé for
-                        a once in a lifetime show combining live music against
-                        a backdrop of remarkable footage from The Blue Planet
-                        2001.<br><br> Limited Thursday add-on, stand-alone and VIP
-                        tickets left, book now > bit.ly/BDTheBluePlanet</p>  
-                </div>    
-                <!--<div class="fp-cont">
-                        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbbcearth%2Fvideos%2F1589316244435259%2F&width=500&show_text=false&height=280&appId" 
-                        width="500" height="280" style="border:none;overflow:hidden" 
-                        scrolling="no" frameborder="0" allowTransparency="true" 
-                        allow="encrypted-media" allowFullScreen="true"></iframe>
-                </div>
-                <div class="fp-footer">
-                    <div class="fp-vl"></div>
-                    <div class = "fp-foo-descr">
-                            <span class="fp-foo-views">1,288,962 Views</span>
-                                    <h5 class="fp-fd">
-                                    <span class="fp-fd-1">
-                                        <span class="fp-fd-2">
-                                            <span class="fp-fd-3">    
-                                            <a href="https://www.facebook.com/bluedotfestival/?hc_ref=ARTeLn36vynaEJNqvbb7uXDhWo9Z4OPuWu_s0RzAHwNhfI9U0zY-8kdbbRDkSpBhw6w">
-                                            BBC Earth</a>
-                                            </span>
-                                             is with 
-                                            <a href="https://www.facebook.com/bbcearth/videos/1589316244435259/?hc_ref=ARTTbHRukuBwtNBPZY5AgI1BaPLKZNUqqpt_2E3oSoUOz6vw0ZPyQM4XNKITnWesq24">
-                                            Global Goals for Sustainable Development</a>
-                                            .
-                                        </span>    
-                                    </span>              
-                                    </h5>
-                                    <span class="fp-fd-time">Yesterday at 11:43am</span>
-                    </div>
                 </div>-->
-                <div class="fp-footer-btn">
-                        <button type = "button" class = "fp-footer-like">
-                                <img class = "fp-footer-ico" src="https://png.icons8.com/windows/96/666666/facebook-like.png"> 
-                                <div class = "fp-button-text">Like</div>
-                        </button>
-                        <button type = "button" class = "fp-footer-com">
-                                 <img class = "fp-footer-ico" src="https://png.icons8.com/small/32/666666/speech-bubble.png"> 
-                                 <div class = "fp-button-text">Comment</div>       
-                        </button>
-                        <button type = "button" class = "fp-footer-sha">
-                                <img class = "fp-footer-ico" src="https://png.icons8.com/android/32/666666/right2.png"> 
-                                <div class = "fp-button-text">Share</div>       
-                       </button>
-                </div>
             </div>
         </div>
-        <div class="right-feed">
+        <div class = "right-feed">
             <div class = "stories-sec">
                 <div class="sto-sec-title">Stories</div>
                 <div class="sto-sec-add">
@@ -415,7 +447,7 @@
                     </div>
     
                 </div>
-        </div>
+        
     </div>
 </body>
 </html>

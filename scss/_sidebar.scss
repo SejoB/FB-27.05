@@ -33,12 +33,18 @@
         margin: 0px;
         width: 180px;
         height: 85px;
-     
+        
         .sidenav-item{
             display: flex;
             flex-direction: column;
             width: 180px;
             height: 28px;  
+
+            &.active {
+                background-color: #f6f7f9;
+                border-radius: 1px;
+                border: $border-feed-cont;  
+            }
 
             >a{
                display: flex;
@@ -49,8 +55,7 @@
             }
         
             &:hover{
-                    background-color: #f6f7f9;
-                    border-radius: 3px;  
+                @extend .active;
             }          
     }    
 }    

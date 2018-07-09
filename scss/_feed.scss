@@ -1,5 +1,6 @@
 .feed-container {
     display: flex;
+    flex-direction: row;
     height: 3000px;
     width: 832px;
     margin-top: 43px; 
@@ -15,127 +16,16 @@
     flex-direction: column;
 }
 
-.create-feed-post{
-    width: 500px;
-    height: 160px;
+.posts-area{
     display: flex;
-    flex-wrap: wrap;
-    background-color: $feed-back-color;
-    border: $border-feed-cont;
-    border-radius: 3px;
-    flex-direction: column;
-    margin-bottom: 12px;
-    margin-right: 12px;
-}    
-
-.cfp-header{
-    display: flex;
-    width: 476px;
-    height: 16px;
-    padding: 8px 24px 8px 0px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #f6f7f9;
-    border-bottom: $border-feed-cont;
-}    
-        
-.link-icon{
-    width: 16px;
-    height: 16px;
-    padding-right: 6px;
-} 
-
-.link-text{
-    text-decoration: none;
-    display: flex;
-    padding: 4px 10px 4px 8px;
-    color: $feed-blue-txt;
-    font-family: $main-font;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-}
-
-.vl{
-    display: flex;
-    border-right: 1px solid #dfe0e3;
-    height: 15px;
-}
-
-.cfp-comment{
-    display: flex;
-    width: 500px;
-    height: 75px;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.avtr-link{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.avtr-img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin: 12px 0 0 12px;
-}
-
-.txt-comment{
-    width: 388px;
-    height: 35px;
-    padding: 23px 48px 13px 12px;
-}
-
-input{
-    border: none;
-    font-family: $main-font;
-    font-size: 13px;
-    width: 200px;
-}
-
-.cfp-footer{
-    display: flex;
-    width: 476px;
-    height: 32px;
-    border-top: $border-feed-line;
-    padding: 8px 0px 8px 0px;
-    margin: 0px 12px 0px 12px;
-    justify-content: flex-start;
-    align-items: flex-start;   
-}
-
-.cfp-footer-ico{
-    width: 20px;
-    height: 20px;
-}
-
-.cfp-button{
-    display: inline-flex;
-    background-color: #f6f7f9;
-    height: 32px;
-    width: 120;
-    border: none;
-    border-radius: 15px;
-    text-align: center;
-    margin-right: 15px; 
-}
-
-.cfp-button-text{
-    color: #4b4f56;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 2px 0 0 8px;
-    font-family: $main-font;
+    height: 3000;
 }
 
 .feed-post{
     display: flex;
     width: 476px;
-    max-height: 688px;
-    padding: 12px 12px 12px 12px;
+    max-height: 800px;
+    padding: 12px 12px 0px 12px;
     background-color: $feed-back-color;
     border: $border-feed-cont;
     border-radius: 3px;
@@ -147,7 +37,7 @@ input{
 
 .fp-header{
     display: flex;
-    width: 450px;
+    width: 475px;
     height: 46px;  
 }      
  
@@ -210,6 +100,46 @@ input{
     font-family: $main-font;
     font-size: 13px;
     color: $feed-grey-txt;   
+}
+
+.fp-header-menu{
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/ZhIo2fY_tL3.png");
+    background-repeat: no-repeat;
+    background-size: 64px 355px;
+    background-position: -21px -168px;
+    height: 20px;
+    width: 20px;
+
+    .fp-post-menu{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 95px;
+        height: 67px;
+        background-color: white;
+        border: $border-feed-cont;
+        top: 260px;
+        right: 460px;
+        border-radius: 3px;
+        box-shadow: 0px 4px 8px #90949c;
+    }
+
+    &:hover .fp-post-menu{
+        display: flex;
+    }
+}
+
+.fp-post-items{
+    padding: 10px;
+    margin: 0px;
+}
+
+.fp-edit, .fp-del{
+    color: black;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
 }
  
 .fp-header-post > p{
@@ -346,6 +276,42 @@ input{
     font-size: 13px;
     font-family: $main-font;
 }
+
+.fp-comments{
+    display: flex;
+    width: 475px;
+    height: 34px;
+    padding: 8px 0px 8px 0px;
+
+    .fp-avtr-com .fp-com-pic{
+        height: 30px;
+        width: 30px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+
+    .fp-post-com{
+        height: 32px;
+        width: 416px;
+        border-radius: 18px;
+        border: $border-feed-cont;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        margin-left: 10px;
+    }
+
+    .fp-com-txt{
+        border: none;
+        text-align: left;
+        font-size: 13px;
+        line-height: 16px;
+        font-family: $main-font;
+    }
+
+    
+}
+
 
 
 

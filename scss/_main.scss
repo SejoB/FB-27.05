@@ -15,3 +15,10 @@ span, a, ul, li, div{
     text-decoration: none;
     list-style-type: none;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

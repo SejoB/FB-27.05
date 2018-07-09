@@ -1,0 +1,117 @@
+
+.create-feed-post{
+    width: 500px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $feed-back-color;
+    border: $border-feed-cont;
+    border-radius: 3px;
+    flex-direction: column;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}    
+
+.cfp-header{
+    display: flex;
+    width: 476px;
+    height: 16px;
+    padding: 8px 24px 8px 0px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f6f7f9;
+    border-bottom: $border-feed-cont;
+}    
+        
+.link-icon{
+    width: 16px;
+    height: 16px;
+    padding-right: 6px;
+} 
+
+.link-text{
+    text-decoration: none;
+    display: flex;
+    padding: 4px 10px 4px 8px;
+    color: $feed-blue-txt;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.vl{
+    display: flex;
+    border-right: 1px solid #dfe0e3;
+    height: 15px;
+}
+
+.cfp-comment{
+    display: flex;
+    width: 500px;
+    height: 75px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.avtr-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avtr-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 12px 0 0 12px;
+}
+
+.txt-comment{
+    width: 388px;
+    height: 35px;
+    padding: 13px 48px 13px 12px;
+}
+
+textarea{
+    border: none;
+    font-family: $main-font;
+    font-size: 13px;
+    width: 400px;
+}
+
+.cfp-footer{
+    display: flex;
+    width: 476px;
+    height: 32px;
+    border-top: $border-feed-line;
+    padding: 8px 0px 8px 0px;
+    margin: 0px 12px 0px 12px;
+    justify-content: flex-start;
+    align-items: flex-start;   
+}
+
+.cfp-footer-ico{
+    width: 20px;
+    height: 20px;
+}
+
+.cfp-button, .cfp-button-post{
+    display: inline-flex;
+    background-color: #f6f7f9;
+    height: 32px;
+    width: 147px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 15px; 
+    justify-content: center;
+}
+
+.cfp-button-txt{
+    color: #4b4f56;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 2px 0 0 8px;
+    font-family: $main-font;
+}
