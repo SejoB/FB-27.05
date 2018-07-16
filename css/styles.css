@@ -330,13 +330,12 @@ h4 {
 /* line 1, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .feed-container {
   display: flex;
-  flex-direction: row;
   height: 3000px;
   width: 832px;
   margin-top: 43px;
 }
 
-/* line 9, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 8, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .feed {
   display: flex;
   width: 500px;
@@ -347,10 +346,11 @@ h4 {
   flex-direction: column;
 }
 
-/* line 19, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
+/* line 18, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .posts-area {
   display: flex;
   height: 3000;
+  flex-direction: column;
 }
 
 /* line 24, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
@@ -501,7 +501,7 @@ h4 {
 /* line 157, C:/Code/netcraft/27.05 FB/scss/_feed.scss */
 .fp-cont {
   display: flex;
-  height: 282px;
+  max-height: 282px;
   width: 500px;
   z-index: 10;
   position: relative;
@@ -771,8 +771,9 @@ span, a, ul, li, div {
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
+button:focus, textarea {
   outline: none;
+  border: none;
 }
 
 /* line 2, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
@@ -859,14 +860,13 @@ button:focus {
 }
 
 /* line 76, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
-textarea {
-  border: none;
+.txt-post {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   width: 400px;
 }
 
-/* line 83, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+/* line 82, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
 .cfp-footer {
   display: flex;
   width: 476px;
@@ -878,13 +878,13 @@ textarea {
   align-items: flex-start;
 }
 
-/* line 94, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+/* line 93, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
 .cfp-footer-ico {
   width: 20px;
   height: 20px;
 }
 
-/* line 99, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+/* line 98, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
 .cfp-button, .cfp-button-post {
   display: inline-flex;
   background-color: #f6f7f9;
@@ -897,7 +897,7 @@ textarea {
   justify-content: center;
 }
 
-/* line 111, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
+/* line 110, C:/Code/netcraft/27.05 FB/scss/_createfeedpost.scss */
 .cfp-button-txt {
   color: #4b4f56;
   font-weight: 600;

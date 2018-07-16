@@ -1,6 +1,5 @@
 .feed-container {
     display: flex;
-    flex-direction: row;
     height: 3000px;
     width: 832px;
     margin-top: 43px; 
@@ -19,6 +18,7 @@
 .posts-area{
     display: flex;
     height: 3000;
+    flex-direction: column;
 }
 
 .feed-post{
@@ -156,7 +156,7 @@
 
 .fp-cont{
     display: flex;
-    height: 282px;
+    max-height: 282px;
     width: 500px;
     z-index: 10;
     position: relative;
