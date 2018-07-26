@@ -1,6 +1,6 @@
 .feed-container {
     display: flex;
-    height: 3000px;
+    //min-height: 100%;
     width: 832px;
     margin-top: 43px; 
 }
@@ -8,7 +8,7 @@
 .feed{
     display: flex;
     width: 500px;
-    height: 100%;
+    //min-height: 100%;
     margin-left: 12px;
     margin-top: 12px;
     margin-right: 12px;
@@ -17,14 +17,15 @@
 
 .posts-area{
     display: flex;
-    height: 3000;
+    //min-height: 100%;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .feed-post{
     display: flex;
     width: 476px;
-    max-height: 800px;
+    //max-height: 800px;
     padding: 12px 12px 0px 12px;
     background-color: $feed-back-color;
     border: $border-feed-cont;
@@ -246,6 +247,7 @@
     border-top: $border-feed-line;
     border-bottom: $border-feed-line;
     margin-top: 12px;
+    //margin-bottom: 12px;
 }  
 
 .fp-footer-ico{
@@ -282,8 +284,10 @@
     width: 475px;
     height: 34px;
     padding: 8px 0px 8px 0px;
+}
 
     .fp-avtr-com .fp-com-pic{
+        display: flex;
         height: 30px;
         width: 30px;
         border: 1px solid transparent;
@@ -302,6 +306,7 @@
     }
 
     .fp-com-txt{
+        display: flex;
         border: none;
         text-align: left;
         font-size: 13px;
@@ -310,7 +315,7 @@
     }
 
     
-}
+
 
 
 

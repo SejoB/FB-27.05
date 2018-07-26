@@ -1,3 +1,4 @@
+
 class UserService{
     getUser(id) {
         return fetch('https://jsonplaceholder.typicode.com/users/' + id)
@@ -7,7 +8,8 @@ class UserService{
 }
 
 let userService = new UserService();
-
+var logUser;
+/*user = loging user*/
 class User {
     constructor(user, avatar){
         this.fullName = user.name;
@@ -38,27 +40,39 @@ class Feed{
     constructor(postEl){
         this.postEl = postEl;
         this.user = userService.getUser(2).then(user => { 
-        this.tmp = user;
-        this.user = this.tmp.getName('full');
-        console.log(this.user);
+            this.tmp = user;
+            logUser = user;
+            this.user = this.tmp.getName('full');
+            //console.log(this.user);
         });
 
         this.input = postEl.querySelector('.txt-post');
         this.postButton = postEl.querySelector('.cfp-button-post'); 
         this.postsArea = postEl.querySelector('.posts-area');
-        this.postButton.addEventListener('click', () => this.createPost());
+        this.postButton.addEventListener('click', () => {
+            this.createPost();
+            new PostLikes(this.postHtml.querySelector('.postLikes'), this.postHtml.querySelector('.fp-footer-like'));
+            this.postHtml.querySelector('.fp-com-txt').addEventListener('keydown', function(e) {
+                if(e.keyCode === 13) {
+                  new Comment(logUser, this.value).addComment(document.querySelector('.fp-comments-cont'));
+                    this.value = '';
+                }
+            });
+        });
     }
 
     createPost(){
         let firstPost = this.postsArea.querySelector('.feed-post:first-child');
-        this.postsArea.insertBefore(new Post(this.tmp.getName('user') + new Date(), this.tmp, this.input.value, new Date()).html, firstPost);
+        this.postHtml = new Post(this.tmp.getName('user') + new Date(), this.tmp, this.input.value, new Date()).html;
+        this.postsArea.insertBefore(this.postHtml, firstPost);
+
     }
 }
 
 class Post {
     constructor(idPost, user, text, dateTime){
         this.idPost = idPost;
-        console.log(idPost);
+        //console.log(idPost);
         this.user = user;
         this.text = text; 
         this.dateTime = dateTime;
@@ -109,7 +123,7 @@ class Post {
         <div class = "fp-footer">
             <div class="fp-vl"></div>
             <div class = "fp-foo-descr">
-                    <span class="fp-foo-views">${this.views} Views</span>
+                    <span class="fp-foo-views">${this.views}Views</span>
                             <h5 class="fp-fd">
                             <span class="fp-fd-1">
                                 <span class="fp-fd-2">
@@ -127,6 +141,9 @@ class Post {
                             <span class="fp-fd-time">${this.dateTime}</span>
             </div>
         </div>
+        <div>
+            <span class = "postLikes"></span>
+        </div>
         <div class = "fp-footer-btn">
             <button type = "button" class = "fp-footer-like">
                     <img class = "fp-footer-ico" src="https://png.icons8.com/windows/96/666666/facebook-like.png"> 
@@ -141,6 +158,7 @@ class Post {
                     <div class = "fp-button-text">Share</div>       
             </button>
         </div> 
+        <div class = "fp-comments-cont"></div>
         <div class = "fp-comments">
             <div class="fp-avtr-com">
                 <img class = "fp-com-pic" src="images/avatar.jpg" alt = "">
@@ -148,42 +166,19 @@ class Post {
             <div class="fp-post-com">
                 <input type = "text" class="fp-com-txt" placeholder="Write a comment...">
             </div>
-        </div>`;
-    }
-}
-
-
-class Comment {
-    constructor(idComment, idUser, text){
-        this.idComment = idComment;
-        this.idUser = idUser;
-        this.text = text;   
-    }
-}
-
-new Feed(document.querySelector('.feed'));
-
-/*document.querySelector('.fp-footer-like'); 
-addEventListener('click', () => console.log("one like"));
-document.createElement('div');
-        innerHTML = 
-        `<div class = "post-likes">
-             <span><img class = "img-likes" src = "https://png.icons8.com/ultraviolet/80/666666/good-quality.png">${this.count}</span>
-        </div>`;
-     fp-footer.insertBefore('div');
-
-/*class Likes {
-    constructor(like){
-        this.like = like;
-        this.likeBtn = document.querySelector('.fp-footer-like'); 
-        this.likesButton.addEventListener('click', () => console.log("one like"));
-        this.div = document.createElement('div');
-        this.html = document.createElement('div.post-likes');
-        this.html.className = 'post-likes';
-        this.html.innerHTML = 
-
-            `<span><img class = "img-likes" src = "https://png.icons8.com/ultraviolet/80/666666/good-quality.png">0</span>
+        </div>
         `;
     }
-    
-}*/
+}
+
+
+
+ new Feed(document.querySelector('.feed'));
+ 
+
+
+
+
+
+
+   

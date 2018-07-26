@@ -1,0 +1,43 @@
+.comments-likes-cont {
+    align-items: center;
+    display: flex;
+    left: 120px;
+    position: relative;
+}
+
+.comment-likes-btn {
+    font-size: 13px;
+    color: #8d949e;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-right: 305px;
+}
+
+.commentLikes {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    color: $r-feed-grey-txt;
+    font-family: $main-font;
+
+
+img {
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+}
+}
+
+.postLikes{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    color: $r-feed-grey-txt;
+    font-family: $main-font;
+
+    img{
+        width: 15px;
+        height: 15px;
+        display: inline-flex;
+        margin-right: 2px;
+    }
+}

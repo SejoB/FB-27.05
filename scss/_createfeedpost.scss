@@ -1,15 +1,16 @@
 
 .create-feed-post{
     width: 500px;
-    height: 160px;
+    //height: 160px;
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     background-color: $feed-back-color;
     border: $border-feed-cont;
     border-radius: 3px;
     flex-direction: column;
     margin-bottom: 12px;
     margin-right: 12px;
+    flex-shrink: 0;
 }    
 
 .cfp-header{
