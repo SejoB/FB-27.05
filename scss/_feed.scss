@@ -110,6 +110,7 @@
     background-position: -21px -168px;
     height: 20px;
     width: 20px;
+    position: relative;
 
     .fp-post-menu{
         display: none;
@@ -119,13 +120,13 @@
         height: 67px;
         background-color: white;
         border: $border-feed-cont;
-        top: 260px;
-        right: 460px;
+        top: 12px;
+        right: -14px;
         border-radius: 3px;
         box-shadow: 0px 4px 8px #90949c;
     }
 
-    &:hover .fp-post-menu{
+    &:hover > div{
         display: flex;
     }
 }

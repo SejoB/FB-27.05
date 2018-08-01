@@ -398,6 +398,7 @@ h4 {
   background-position: -21px -168px;
   height: 20px;
   width: 20px;
+  position: relative;
 }
 
 .fp-header-menu .fp-post-menu {
@@ -408,13 +409,13 @@ h4 {
   height: 67px;
   background-color: white;
   border: 1px solid #dddfe2;
-  top: 260px;
-  right: 460px;
+  top: 12px;
+  right: -14px;
   border-radius: 3px;
   box-shadow: 0px 4px 8px #90949c;
 }
 
-.fp-header-menu:hover .fp-post-menu {
+.fp-header-menu:hover > div {
   display: flex;
 }
 

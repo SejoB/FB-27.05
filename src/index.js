@@ -1,3 +1,7 @@
+import Comment from './comments';
+import Likes from './likes';
+import { updExistCommentsEvents } from "./comments";
+
 
 class UserService{
     getUser(id) {
@@ -9,7 +13,7 @@ class UserService{
 
 let userService = new UserService();
 var logUser;
-/*user = loging user*/
+//user = loging user;
 class User {
     constructor(user, avatar){
         this.fullName = user.name;
@@ -42,8 +46,8 @@ class Feed{
         this.user = userService.getUser(2).then(user => { 
             this.tmp = user;
             logUser = user;
+            updExistCommentsEvents(user);
             this.user = this.tmp.getName('full');
-            //console.log(this.user);
         });
 
         this.input = postEl.querySelector('.txt-post');
@@ -51,10 +55,18 @@ class Feed{
         this.postsArea = postEl.querySelector('.posts-area');
         this.postButton.addEventListener('click', () => {
             this.createPost();
-            new PostLikes(this.postHtml.querySelector('.postLikes'), this.postHtml.querySelector('.fp-footer-like'));
+            let tmpThis = this;
+            postEl.querySelector('.fp-post-del').addEventListener('click', function(){
+                tmpThis.deletePost(this.parentNode.parentNode.parentNode.parentNode.parentNode);
+            });
+            postEl.querySelector('.fp-post-edit').addEventListener('click', function(){
+                tmpThis.editPost(this.parentNode.parentNode.parentNode.parentNode.parentNode);
+            });
+            new Likes(this.postHtml.querySelector('.postLikes'), this.postHtml.querySelector('.fp-footer-like'));
+            let tmpHtml = this.postHtml;
             this.postHtml.querySelector('.fp-com-txt').addEventListener('keydown', function(e) {
                 if(e.keyCode === 13) {
-                  new Comment(logUser, this.value).addComment(document.querySelector('.fp-comments-cont'));
+                  new Comment(logUser, this.value).addComment(tmpHtml.querySelector('.fp-comments-cont'));
                     this.value = '';
                 }
             });
@@ -65,14 +77,21 @@ class Feed{
         let firstPost = this.postsArea.querySelector('.feed-post:first-child');
         this.postHtml = new Post(this.tmp.getName('user') + new Date(), this.tmp, this.input.value, new Date()).html;
         this.postsArea.insertBefore(this.postHtml, firstPost);
+    }
 
+    deletePost(el){
+        el.remove();
+    }
+
+    editPost(el){
+        let newText = prompt('Write new text', el.querySelector('.fp-header-post p').innerHTML);
+        if  (newText && newText != '') el.querySelector('.fp-header-post p').innerHTML = newText;
     }
 }
 
 class Post {
     constructor(idPost, user, text, dateTime){
         this.idPost = idPost;
-        //console.log(idPost);
         this.user = user;
         this.text = text; 
         this.dateTime = dateTime;
@@ -103,14 +122,10 @@ class Post {
                 <div class = "fp-post-menu">
                     <ul class = "fp-post-items">
                         <li class = "fp-post-del">
-                            <a href = "">
-                                <span class = "fp-del">Save post</span>
-                            </a>
+                            <span class = "fp-del">Delete</span>
                         </li>
                         <li class = "fp-post-edit">
-                            <a href = "">
-                                <span class = "fp-edit">Edit post</span>
-                            </a>
+                            <span class = "fp-edit">Edit</span>
                         </li>
                     </ul>
                 </div>
@@ -174,6 +189,7 @@ class Post {
 
 
  new Feed(document.querySelector('.feed'));
+ 
  
 
 

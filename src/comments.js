@@ -1,4 +1,5 @@
-class Comment {
+import Likes from './likes.js';
+export default class Comment {
     constructor(user, text){
         this.user = user;
         this.text = text;  
@@ -19,17 +20,21 @@ class Comment {
                 <div class = "commentLikes"></div>  
             </div>
         `;
-        new CommentLikes(this.container.querySelector('.commentLikes'),
-                         this.container.querySelector('.comment-likes-btn'));
+        new Likes(this.container.querySelector('.commentLikes'),
+                  this.container.querySelector('.comment-likes-btn'));
         wrapper.appendChild(this.container);
     }
 }
-let commentsArr = document.querySelectorAll('.fp-com-txt');
-for (let i = 0; i < commentsArr.length; i++) {
-    commentsArr[i].addEventListener('keydown', function(e) {
-        if(e.keyCode === 13) {
-          new Comment(logUser, this.value).addComment(document.querySelector('.fp-comments-cont'));
-            this.value = '';
-        }
-    });
+
+export function updExistCommentsEvents(logUser) {
+    let commentsArr = document.querySelectorAll('.fp-com-txt');
+    for (let i = 0; i < commentsArr.length; i++) {
+        commentsArr[i].addEventListener('keydown', function(e) {
+            if(e.keyCode === 13) {
+                new Comment(logUser, this.value).addComment(this.parentNode.parentNode.parentNode.querySelector('.fp-comments-cont'));
+                this.value = '';
+            }
+        });
+    }
 }
+ 
